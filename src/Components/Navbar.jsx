@@ -50,7 +50,7 @@ function Navbar() {
             <li key={index}>
               <NavLink
                to={menu.Url}
-                className=" font-semibold duration-200 text-lg text-white pl-3 md:font-medium lg:text-xl lg:text-red-600 lg:font-bold md:text-md hover:text-pink-500"
+                className=" font-semibold duration-200 text-lg text-white pl-3 md:font-medium lg:text-xl  lg:font-bold md:text-md hover:text-pink-500"
               >
                 {menu.text}
               </NavLink>
