@@ -34,7 +34,7 @@ function Navbar() {
           }   z-50
            flex  flex-col md:flex-row md:top-0   left-0  bottom-0 
            bg-slate-800 opacity-100 md:bg-transparent h-screen md:h-0  w-[100%] md:w-auto
-             px-4 md:px-10 md:pt-10 pt-3 gap-7 md:right-0 md:justify-center  md:items-center md:gap-1`}
+             px-4 md:px-10  pt-3 gap-7 md:right-0 md:justify-center  md:items-center md:gap-1`}
         >
           <div className="flex justify-between items-center pr-3">
             <Logo />
