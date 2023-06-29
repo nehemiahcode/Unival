@@ -49,7 +49,7 @@ function Sections() {
         </div>
         <div className=" lg:w-full  w-[90%] mx-auto h-[auto] ">
           <div className=" h-[500px] w-[100%] lg:w-fit md:w-[60%] sm:w-[70%] md:bg-gray-400 bg-slate-100 rounded-full flex justify-center items-center  mx-auto">
-            <img src={Firstimage} alt="" className=" h-[500px]  " />
+            <img src={Firstimage} alt="" className=" h-[470px]  " />
           </div>
         </div>
       </div>

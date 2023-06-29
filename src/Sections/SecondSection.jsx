@@ -19,7 +19,7 @@ export default function SecondSection() {
             <img
               src={PeopleImage}
               alt="People smilling togther"
-              className="w-[100%] sm:h-[380px] h-[350px] rounded-xl"
+              className="w-[100%] sm:h-[380px] h-[340px] rounded-xl"
             />
           </div>
           <div className=" grid grid-cols-1 gap-5 lg:grid-cols-2  place-items-center mt-5  w-full h-auto ">
@@ -127,7 +127,7 @@ export function Cards() {
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {card.heading}
             </h5>
-            <p className="mb-3 font-medium text-lg text-gray-700 dark:text-gray-400">
+            <p className="mb-3 font-medium text-lg text-gray-900 dark:text-gray-400">
               {card.paragrapg}
             </p>
             <a
@@ -350,39 +350,14 @@ export function Offers() {
 }
 
 export function Reviews() {
-  const Carousel = [
-    {
-      id: 0,
-      data: "active",
-      text: "JAMES BROWN",
-      name: "LAW ",
-    },
-    {
-      id: 1,
-      data: "",
-      text: " William Skot",
-      name: "BUSSINESS ",
-    },
-    {
-      id: 2,
-      data: "",
-      text: "William Wright",
-      name: "SCIENCE ",
-    },
-    {
-      id: 3,
-      data: "",
-      text: "Jenny Wilson ",
-      name: "ART ",
-    },
-  ];
+  
   return (
     <>
       <div className=" bg-gray-100">
         <p className=" mb-10 ">.</p>
         <SVG />
         <h1 className=" text-3xl lg:text-5xl font-bold text-black text-center">
-          Review's From Students
+          Review's From Student
         </h1>
         <p className=" text-lg lg:text-xl font-medium text-black px-5 text-center py-6">
           Saepe quo labore aenean dictumst expedita
@@ -390,19 +365,8 @@ export function Reviews() {
           commodi auctor, nisl, lorem iusto feugiat nemo reiciendis laboris.
         </p>
 
-        <div
-          id="indicators-carousel"
-          className="relative w-[100%] md:w-[90%] lg:w-[70%] mx-auto "
-          data-carousel="static"
-        >
-          <div className="relative h-[500px] overflow-hidden">
-            {Carousel.map((slider, index) => (
-              <div
-                key={index}
-                className="hidden duration-700 ease-in-out"
-                data-carousel-item={slider.data}
-              >
-                <div className=" bg-white rounded-2xl h-[auto]  px-10 py-10 shadow-2xl w-[90%] absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+       
+                <div className=" bg-white rounded-2xl h-[auto] mx-auto my-5  px-10 py-10 shadow-2xl w-[90%] lg:w-[70%] ">
                   <p className=" text-base font-medium text-gray-700 text-center pt-4">
                     “Per sed, mattis. Integer viverra euismod maecenas incidunt,
                     phasellus consequatur aliquam nihil temporibus in assumenda?
@@ -421,72 +385,14 @@ export function Reviews() {
                         width={90}
                         className=" rounded-full mt-4"
                       />
-                      <h1 className=" text-lg font-semibold">{slider.text}</h1>
+                      <h1 className=" text-lg font-semibold">William Skot</h1>
                       <p className=" text-pink-500 font-normal">
-                        {slider.name} STUDENT
+                      SCIENCE STUDENT
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
-                 
-            ))}
           </div>
-        <div className="  grid place-content-center mb-5"><button className=" bg-slate-800 px-10 py-4 hover:bg-slate-800 hover:ring-4 ring-inset duration-300 ring-slate-400 text-white rounded-full  font-medium">MORE REVIEWS NOW</button></div>
-          <button
-            type="button"
-            className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev
-          >
-            <span
-              className="inline-flex items-center justify-center 
-          w-12 h-12 rounded-full bg-pink-800 shadow-xl hover:bg-pink-600 hover:ring-2 ring-inset "
-            >
-              <svg
-                aria-hidden="true"
-                className="w-8 h-8  text-white text-5xl sm:w-9 sm:h-9"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 19l-7-7 7-7"
-                ></path>
-              </svg>
-              <span className="sr-only">Previous</span>
-            </span>
-          </button>
-
-          <button
-            type="button"
-            className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next
-          >
-            <span className="inline-flex items-center justify-center w-12 h-12 hover:ring-2 ring-inset shadow-xl rounded-full  bg-pink-800 hover:bg-pink-600">
-              <svg
-                aria-hidden="true"
-                className="w-8 h-8  text-white text-5xl sm:w-9 sm:h-9"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 5l7 7-7 7"
-                ></path>
-              </svg>
-              <span className="sr-only">Next</span>
-            </span>
-          </button>
-        </div>
-      </div>
     </>
   );
 }
