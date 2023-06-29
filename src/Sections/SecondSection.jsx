@@ -495,11 +495,11 @@ export function Reviews() {
 export function Footer() {
 
     const Links = [
-        {id:0, text:"home", Url:"/", Url2:"/", text2:"help center"},
-        {id:1, text:"about us", Url:"/about" , Url2:"/", text2:"Faqs"},
-        {id:2, text:"facility", Url:"/facility" , Url2:"/", text2:"parent community"},
-        {id:3, text:"blog", Url:"/blog" , Url2:"/", text2:"Legal notice"},
-        {id:4, text:"contact", Url:"/contact" , Url2:"/", text2:"news and articles"}
+        {id:0, text:"home", Url:"/", Url2:"#", text2:"help center"},
+        {id:1, text:"about us", Url:"/about" , Url2:"#", text2:"Faqs"},
+        {id:2, text:"facility", Url:"/facility" , Url2:"#", text2:"parent community"},
+        {id:3, text:"blog", Url:"/blog" , Url2:"#", text2:"Legal notice"},
+        {id:4, text:"contact", Url:"/contact" , Url2:"#", text2:"news and articles"}
     ]
     return (
         <>
