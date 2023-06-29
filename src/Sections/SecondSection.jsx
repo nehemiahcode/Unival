@@ -119,7 +119,7 @@ export function Cards() {
           <div
             key={index}
             className=" w-[100%] mx-auto sm:w-[80%] md:w-[100%] py-5 md:mx-0 h-[330px] px-3 bg-white border border-gray-200 rounded-xl hover:shadow-inner shadow-2xl
-             mt-5 hover:ring-2 duration-300 ring-red-300 dark:bg-gray-800 text-center dark:border-gray-700"
+             mt-5 hover:ring-2 duration-300 ring-red-300 "
           >
             <span className="material-symbols-outlined text-6xl bg-gray-300 p-2 rounded-full">
               {card.icon}

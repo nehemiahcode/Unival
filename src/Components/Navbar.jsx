@@ -3,7 +3,7 @@ import { useState } from "react";
 import Logo from "./Logo";
 import { CloseIcon, MenuIcon } from "./WrapperIcon";
 import "../App.css"
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -48,12 +48,12 @@ function Navbar() {
           </div>
           {Menu.map((menu, index) => (
             <li key={index}>
-              <Link
+              <NavLink
                to={menu.Url}
                 className=" font-semibold duration-200 text-lg text-white pl-3 md:font-medium lg:text-xl lg:text-red-600 lg:font-bold md:text-md hover:text-pink-500"
               >
                 {menu.text}
-              </Link>
+              </NavLink>
             </li>
           ))}
           <button
